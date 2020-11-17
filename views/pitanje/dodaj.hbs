@@ -1,0 +1,21 @@
+<style>
+    body {
+        background: steelblue;
+    }
+
+</style>
+
+
+
+<h1>Pitanje</h1>
+<form action="/pitanja" method="post">
+    <h3>Naslov:</h3>
+    <input type="text" name="naslov" required>
+    <h3>Pitnje:</h3>
+    <textarea rows="10" cols="80" name="vsebina"></textarea>
+    <h3>Tag</h3>
+    <input type="text" name="tag">
+    <div class="tp">
+        <input type="submit" value="Dodaj vprasanje">
+    </div>
+</form>

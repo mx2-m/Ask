@@ -1,0 +1,33 @@
+<style>
+    body {
+        background: steelblue;
+    }
+</style>
+
+<h1 align="center">Pitanje</h1>
+<h2>{{naslov}}</h2>
+<p>{{vsebina}}</p>
+<p>{{tag}}</p>
+<p>Datum:{{datum}}</p>
+
+
+
+<form method="post" action="/pitanja/{{_id}}/answer">
+    <label>:</label><br/>
+    <textarea cols="80" rows="10" name="content"></textarea>
+    <input type="submit" name="answer" value="Odgovori">
+</form>
+
+{{#each comments}}
+    <h2><a href="/pitanja/{{_id}}/answer/{{_id}}">{{content}} </a></h2>
+
+    <form action="/pitanja/{{_id}}/answer/{{_id}}/sprejmi" method="post">
+        <button type="submit" >Sprejmi</button>
+    </form>
+
+    <form method="delete" action="/pitanja/{{_id}}/answer/{{_id}}">
+        <button type="send" >Obrisi</button>
+    </form>
+
+    <hr/>
+{{/each}}

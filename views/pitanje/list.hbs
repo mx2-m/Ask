@@ -1,0 +1,17 @@
+<style>
+body {
+    background: steelblue;
+}
+
+</style>
+
+
+<h1 align="center"> Pitanja{{users.username}}  </h1>
+{{#each this}}
+    <h2> {{naslov}} </h2>
+    <p> {{vsebina}} </p>
+    <p> {{tags}} </p>
+    <p> {{datum}} </p>
+    <a href="../pitanja/{{_id}}">Detaljno</a>
+    <hr/>
+{{/each}}

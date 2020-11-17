@@ -1,0 +1,9 @@
+<h1> Odgovor </h1>
+<h2> {{content}} </h2>
+<p>{{datum}}</p>
+<p>Sprejmljeno: {{votes}}</p>
+<form action="/pitanja/{{_id}}/answer/{{_id}}/sprejmi" method="post">
+    <button type="submit" >Sprejmi</button>
+</form>
+
+<a href="/pitanja/{{pitanje}}">Nazaj na vprasanje</a>

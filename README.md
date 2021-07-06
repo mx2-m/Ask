@@ -2,6 +2,7 @@
 A website that allows logged-in users to ask and answer questions
 
 ## Demo
+![ Alt text](Animation.gif) 
 
 ## Technologies used
 * Node.js
